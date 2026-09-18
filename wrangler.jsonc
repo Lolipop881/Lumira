@@ -1,5 +1,5 @@
 {
-  "name": "lumira",
+  "name": "lumira-lab",
   "main": "vinext/server/fetch-handler",
   "compatibility_date": "2026-09-18",
   "compatibility_flags": ["nodejs_compat"],
