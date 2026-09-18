@@ -1,0 +1,12 @@
+{
+  "name": "Lumira — Your Science Companion",
+  "short_name": "Lumira",
+  "description": "เครื่องมือวิทยาศาสตร์สำหรับนับ วิเคราะห์ คำนวณ และบันทึกผล",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f3f8fb",
+  "theme_color": "#204c69",
+  "icons": [
+    {"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable"}
+  ]
+}

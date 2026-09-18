@@ -1,0 +1,30 @@
+import { sqliteTable, text, integer, real } from "drizzle-orm/sqlite-core";
+export const records = sqliteTable("records", {
+  id: text("id").primaryKey(),
+  name: text("name").notNull(),
+  sampleId: text("sample_id").notNull(),
+  medium: text("medium").notNull(),
+  location: text("location").notNull(),
+  collectedAt: text("collected_at").notNull().default(""),
+  sampleType: text("sample_type").notNull().default(""),
+  platingMethod: text("plating_method").notNull().default(""),
+  incubationHours: text("incubation_hours").notNull().default(""),
+  customField: text("custom_field").notNull().default(""),
+  temperature: text("temperature").notNull(),
+  notes: text("notes").notNull(),
+  dilution: integer("dilution").notNull(),
+  volume: real("volume").notNull(),
+  count: integer("count").notNull(),
+  cfu: real("cfu").notNull(),
+  points: text("points").notNull(),
+  imageKey: text("image_key").notNull(),
+  createdAt: text("created_at").notNull(),
+});
+export const measurements = sqliteTable("measurements", {
+  id: text("id").primaryKey(),
+  kind: text("kind").notNull(),
+  title: text("title").notNull(),
+  data: text("data").notNull(),
+  imageKey: text("image_key"),
+  createdAt: text("created_at").notNull(),
+});
